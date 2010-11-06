@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Language" content="en-us" />
+    
+    <link href="/style.css" media="screen" rel="Stylesheet" type="text/css" />
+    
+    <title>Mammoth - Simple Storage Service</title>
+  </head>
+
+  <body>
+    <div id="pagewrap">
+
+      <div id="header">
+        <h1>Mammoth</h1>
+        <h2>A <em>trunk</em> for all your <em>junk</em></h2>
+        
+        <form method="POST" enctype="multipart/form-data" action="/upload" id="upload">
+          <input type="file" name="file" />
+          <input type="submit" value="Upload" />
+          <p id="status"><img src="/images/uploading.gif" alt="" /> Uploading</p>
+        </form>
+      </div>
+  
+      <div id="content">
+        <% unless @error.nil? %>
+          <p><%= @error %></p>
+        <% end %>
+        <%= yield %>
+      </div>
+    </div>
+    
+    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2'></script>
+    <script src="/application.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>

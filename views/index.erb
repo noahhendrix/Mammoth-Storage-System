@@ -1,0 +1,9 @@
+<ul id="files">
+  <% if @files.nil? %>
+    <p class="error">No files currently uploaded.</p>
+  <% else %>
+    <% @files.each do |file| %>
+      <%= "<li><a href='/system/#{file}' title='Download Image'><img src='/system/#{file}' alt='#{file}' /></a></li>" unless file == "." || file == ".." %>
+    <% end %>
+  <% end %>
+</ul>

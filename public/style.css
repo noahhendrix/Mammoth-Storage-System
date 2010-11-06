@@ -1,0 +1,23 @@
+html,body,div,span,applet,object,iframe,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,label,legend,p,blockquote,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}body{line-height:1;color:black;background:white;}:focus{outline:0;}table{border-collapse:collapse;border-spacing:0;}caption,th,td{text-align:left;font-weight:normal;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}ol,ul{list-style:none;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}blockquote:before,blockquote:after,q:before,q:after{content:"";}blockquote,q{quotes:"" "";}abbr,acronym{border:0;}
+
+html, body { font: normal normal normal 16px/18px Helvetica, Arial, sans-serif; }
+
+#pagewrap { width: 750px; margin: 0 auto; }
+
+#header { padding: 5px 10px; width: 750px; position: fixed; top: 0;
+  background-color: #A60800; color: white; border-radius: 0 0 15px 15px;
+  -webkit-box-shadow: 0 5px 10px #888; }
+  #header > h1 { padding-left: 55px;
+    font-size: 50px; line-height:55px;
+    background: transparent url(/images/icon.png) no-repeat scroll 5px left; }
+  #header > h2 { padding-left: 140px; }
+    #header > h2 em { font-style: italic; }
+  #header > #upload { position: absolute; right: 10px; top: 30px; }
+    #header > #upload > #status { display: none; }
+
+#content { margin-top: 100px; }
+
+#files { }
+  #files > li { width: 230px; height: 240px; padding: 5px; margin: 5px; float: left;
+    overflow: hidden; }
+    #files > li > img { vertical-align: top; }
